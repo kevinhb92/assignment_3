@@ -1,8 +1,9 @@
   //assign start position and speed for ball 1
   var BallX1 = 320;
   var BallY1 = 200;
-  var BallSpeedX1 = 1;
-  var BallSpeedY1 = 1;
+  var BallSpeedX1 = 3;
+  var BallSpeedY1 = 3;
+
 
   function setup() {
   // create a canvas to draw
@@ -11,66 +12,22 @@
 
   function draw() {
 
-  //assign animation to the Ball
+  //make the ball to follow x-cordinate of mouse cursur
+  if (BallX1 < mouseX) BallSpeedX1 = 3;
+  if (BallX1 > mouseX) BallSpeedX1 = -3;
+
+  //make the ball to follow y-cordinate of mouse cursur
+	if (BallY1 < mouseY) BallSpeedY1 = 3;
+  if (BallY1 > mouseY) BallSpeedY1 = -3;
+
+  // give animation to the ball
   BallX1 = BallX1 + BallSpeedX1;
   BallY1 = BallY1 + BallSpeedY1;
-
-
-  //make it stop when it arrives to cursor
-  if (BallX1 === 0) {
-  BallSpeedX1 = 0;
-  }
-
-  if (BallY1 === 0) {
-  BallSpeedY1 = 0;
-  }
-
-
-  //set-up the (horizontal) out of bound
-
-  if (BallX1 > 640) {
-  BallSpeedX1 = -BallSpeedX1;
-  }
-
-	   // make ball to come closer to cursur
-	   if (BallX1 < mouseX) {
-     BallSpeedX1 = -BallSpeedX1;
-     }
-
-     if (BallX1 > mouseX) {
-     BallSpeedX1 = BallSpeedX1;
-     }
-
-  if (BallX1 < 0) {
-  BallSpeedX1 = -BallSpeedX1;
-  }
-
-
-
-//set-up the (Vertical) out of bound
-if (BallY1 > 450) {
-BallSpeedY1 = -BallSpeedY1
-}
-
-  // make ball to come closer to cursur
-  if (BallY1 > mouseY) {
-  BallSpeedY1 = BallSpeedY1;
-  }
-
-  if (BallY1 < mouseY) {
-  BallSpeedY1 = -BallSpeedY1;
-  }
-
-if (BallY1 < 0) {
-BallSpeedY1 = -BallSpeedY1
-}
-
-
 
 // Background color black
 background(0,0,0);
 
 // draw Ball 1
-ellipse(BallX1+random(-5,5),BallY1+random(-5,5),50,50)
+ellipse(BallX1,BallY1,50,50);
 
 }

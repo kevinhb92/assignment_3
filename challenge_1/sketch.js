@@ -1,6 +1,6 @@
 function setup() {
 	// create a place to draw (resclaed the background)
-	createCanvas(640, 450);
+	createCanvas(640, 460);
 	noStroke();
 	noLoop();
 }
@@ -20,7 +20,7 @@ function draw() {
 	fill(25.5*i,0,0);
 
 	//draw 10 squares using loop
-	rect(10.5+63*i,200,52,52);
+	rect(10.5+63*i,204,52,52);
 }
 
 

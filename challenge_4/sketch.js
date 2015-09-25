@@ -54,11 +54,11 @@ function draw() {
 	}
 
 	// Background color black
-	background(0,0,0);
+	background(0, 0, 0);
 
 	// draw Ball 1
-	ellipse(BallX1,BallY1,50,50);
+	ellipse(BallX1, BallY1, 50, 50);
 
 	// draw ball 2
-	ellipse(BallX2,BallY2,50,50);
+	ellipse(BallX2, BallY2, 50, 50);
 }

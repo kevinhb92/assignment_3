@@ -2,9 +2,7 @@ function setup() {
 	// create a place to draw (resclaed the background)
 	createCanvas(610, 460);
 	noStroke();
-
 }
-
 
 function draw() {
   // set a background color for bonus
@@ -18,6 +16,6 @@ function draw() {
 	fill(z,z,z);
 
 	//draw 10 squares using loop
-	rect(60*x,60*y,70,70);
+	rect(60 * x, 60 * y, 70, 70);
   }
 }

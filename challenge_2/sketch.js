@@ -6,13 +6,39 @@ function setup() {
 }
 
 function draw() {
-	// clear the background
-	background(50, 150, 150);
+	// change the background color for challenge_2
+	background(130,130,170);
 
-	// set a fill color
-	fill(255, 255, 255);
+	// give a condition to black circle not to have fill but black stroke
+	noFill();
+	strokeWeight(2);
+  stroke(0,0,0);
+
+	//loop condition for 20 balck circle
+	 for(var black = 0; black < 20; black++) {
 
 	// draw the ellipse
-	var diameter = random(100, 200);
-	ellipse(320, 180, diameter, diameter);
+	ellipse(320, 180, 20+40*black, 20+40*black);
+}
+
+
+// give a condition to white circle not to have fill but white stroke
+noFill();
+strokeWeight(2);
+stroke(255,255,255);
+
+//loop condition for 20 balck circle
+ for(var white = 0; white < 20; white++) {
+
+// draw the ellipse
+ellipse(320, 180, 40+40*white, 40+40*white);
+}
+
+
+
+
+
+
+
+
 }

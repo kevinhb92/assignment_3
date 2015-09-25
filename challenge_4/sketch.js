@@ -1,11 +1,11 @@
   //assign start position and speed for ball 1
-  var BallX1 = 200;
-  var BallY1 = 100;
+  var BallX1 = 0;
+  var BallY1 = 200;
   var BallSpeedX1 = 3;
   var BallSpeedY1 = 3;
 
   //assign start position and speed for ball 2
-  var BallX2 = 200;
+  var BallX2 = 0;
   var BallY2 = 100;
   var BallSpeedX2 = 2;
   var BallSpeedY2 = 2;
@@ -41,24 +41,24 @@ function draw() {
 
 	//set-up the (Vertical) out of bound
 	if (BallY1 > 450) {
-	BallSpeedY1 = -BallSpeedY1
+	BallSpeedY1 = -BallSpeedY1;
 	}
 	if (BallY2 > 450) {
-	BallSpeedY2 = -BallSpeedY2
+	BallSpeedY2 = -BallSpeedY2;
 	}
 	if (BallY1 < 0) {
-	BallSpeedY1 = -BallSpeedY1
+	BallSpeedY1 = -BallSpeedY1;
 	}
 	if (BallY2 < 0) {
-	BallSpeedY2 = -BallSpeedY2
+	BallSpeedY2 = -BallSpeedY2;
 	}
 
 	// Background color black
 	background(0,0,0);
 
 	// draw Ball 1
-	ellipse(BallX1,BallY1,50,50)
+	ellipse(BallX1,BallY1,50,50);
 
 	// draw ball 2
-	ellipse(BallX2,BallY2,50,50)
+	ellipse(BallX2,BallY2,50,50);
 }

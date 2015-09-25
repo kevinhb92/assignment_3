@@ -5,12 +5,12 @@
   var BallSpeedY1 = 3;
 
 
-  function setup() {
+function setup() {
   // create a canvas to draw
   createCanvas(640, 450);
   }
 
-  function draw() {
+function draw() {
 
   //make the ball to follow x-cordinate of mouse cursur
   if (BallX1 < mouseX) BallSpeedX1 = 3;

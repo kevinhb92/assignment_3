@@ -6,7 +6,7 @@ function setup() {
 }
 
 function draw() {
-	// set a background color for challenge 1 color
+  // set a background color for challenge 1 color
 	background(50, 50, 50);
 
   // give a loop condition for 10 times for 10 square
@@ -21,18 +21,5 @@ function draw() {
 
 	//draw 10 squares using loop
 	rect(10.5+63*i,204,52,52);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-	}

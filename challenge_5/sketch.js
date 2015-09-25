@@ -24,10 +24,9 @@
   BallX1 = BallX1 + BallSpeedX1;
   BallY1 = BallY1 + BallSpeedY1;
 
-// Background color black
-background(0,0,0);
+  // Background color black
+  background(0,0,0);
 
-// draw Ball 1
-ellipse(BallX1,BallY1,50,50);
-
+  // draw Ball 1
+  ellipse(BallX1,BallY1,50,50);
 }
